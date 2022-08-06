@@ -77,7 +77,7 @@ $character"""
 
 [directory]
 format = '\[[$path]($style)[$read_only]($read_only_style)\]'
-read_only ="[🔒](bold red)"
+read_only ="[🔒]"
 
 [character]
 success_symbol = "[🟰](bold green)"
