@@ -10,6 +10,7 @@
 - TLP
 - BleachBit
 - Microcode-Intel
+- ncdu
 
 ### Font and Theme
 - Plague sur
