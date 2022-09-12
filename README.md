@@ -6,11 +6,20 @@
 - ZSH
 - Bpytop
 - Timeshift
-- PipeWire
+- PipeWire + qpwgraph
 - TLP
 - BleachBit
 - Microcode-Intel
 - ncdu
+- Transmission
+- G4 Music
+- MPV + Celluloid
+- Neovim
+- Proton VPN
+- Bitwardon
+- GRUB Customizer
+- GIMP
+- Raw Therapee
 
 ### Font and Theme
 - Plague sur
