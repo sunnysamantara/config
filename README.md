@@ -46,4 +46,9 @@
 - User Themes 
 - Vitals
 
+https://forum.endeavouros.com/t/enable-wayland-gnome-gdm-with-nvidia-and-make-gestures-suspend-work/31621
+
+https://www.youtube.com/watch?v=6wUtRkEWBwE&t=349s
+
+
 ![Desktop](https://i.redd.it/riu2urpqy2f91.png)
