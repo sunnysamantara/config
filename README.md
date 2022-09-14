@@ -29,6 +29,7 @@
 - Unicode emoji
 - Noto color emoji fontconfig
 - Nerd fonts fira-code
+- qgnomeplatform
 
 ### Extensions
 - Bing Wallpaper
@@ -53,6 +54,8 @@ https://www.youtube.com/watch?v=8ORIVRKZnwQ
 https://forum.endeavouros.com/t/enable-wayland-gnome-gdm-with-nvidia-and-make-gestures-suspend-work/31621
 
 https://www.youtube.com/watch?v=6wUtRkEWBwE&t=349s
+
+https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications
 
 use 
 systemctl start grub-btrfs.path -- to get the timeshift mount variable use CTRL + C
