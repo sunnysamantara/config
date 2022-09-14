@@ -24,6 +24,7 @@
 ### Font and Theme
 - Plague sur
 - Orchis
+- Volantes Cursors
 - Noto fonts emoji
 - Unicode emoji
 - Noto color emoji fontconfig
