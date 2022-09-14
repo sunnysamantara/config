@@ -20,6 +20,12 @@
 - GRUB Customizer
 - GIMP
 - Raw Therapee
+- Textpieces
+
+Extra
+
+- Fontdownloader
+- Mousi
 
 ### Font and Theme
 - Plague sur
