@@ -37,6 +37,7 @@
 - Caffeine 
 - Clipboard Indicator 
 - Compiz windows effect
+- Dash to dock
 - Desktop Icons NG (DING) 
 - Gnome 4x UI Improvements
 - GSConnect 
