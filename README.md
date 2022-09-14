@@ -52,5 +52,8 @@ https://forum.endeavouros.com/t/enable-wayland-gnome-gdm-with-nvidia-and-make-ge
 
 https://www.youtube.com/watch?v=6wUtRkEWBwE&t=349s
 
+use 
+systemctl start grub-btrfs.path -- to get the timeshift mount variable use CTRL + C
+https://github.com/Antynea/grub-btrfs
 
 ![Desktop](https://i.redd.it/riu2urpqy2f91.png)
