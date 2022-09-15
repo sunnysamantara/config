@@ -63,6 +63,8 @@ https://www.youtube.com/watch?v=6wUtRkEWBwE&t=349s
 
 https://wiki.archlinux.org/title/Uniform_look_for_Qt_and_GTK_applications
 
+https://www.youtube.com/watch?v=wp6iKDiBfc8&t=983s
+
 use 
 systemctl start grub-btrfs.path -- to get the timeshift mount variable use CTRL + C
 https://github.com/Antynea/grub-btrfs
