@@ -69,4 +69,9 @@ use
 systemctl start grub-btrfs.path -- to get the timeshift mount variable use CTRL + C
 https://github.com/Antynea/grub-btrfs
 
+nvim 
+after installing nvim - install nodejs ctags
+then open nvim and run :PlugInstall
+then run 1 more command :CocInstall coc-spell-checker coc-pyright
+
 ![Desktop](https://i.redd.it/riu2urpqy2f91.png)
