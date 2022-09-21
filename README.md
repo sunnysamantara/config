@@ -22,7 +22,7 @@
 - Raw Therapee
 - Textpieces
 
-Extra
+# Extra
 
 - Fontdownloader
 - Mousi
@@ -55,7 +55,7 @@ Extra
 - User Themes 
 - Vitals
 
-https://www.youtube.com/watch?v=8ORIVRKZnwQ
+[**Basic app installtion**](https://www.youtube.com/watch?v=8ORIVRKZnwQ "15 Things You MUST DO After Installing EndeavourOS")
 
 https://forum.endeavouros.com/t/enable-wayland-gnome-gdm-with-nvidia-and-make-gestures-suspend-work/31621
 
@@ -70,7 +70,7 @@ systemctl start grub-btrfs.path -- to get the timeshift mount variable use CTRL 
 https://github.com/Antynea/grub-btrfs
 
 nvim 
-after installing nvim - install nodejs ctags
+after installing nvim - install nodejs ctags wl-clipboard
 then open nvim and run :PlugInstall
 then run 1 more command :CocInstall coc-spell-checker coc-pyright
 
