@@ -7,10 +7,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
  Plug 'preservim/nerdtree'
  Plug 'jiangmiao/auto-pairs'
  Plug 'mg979/vim-visual-multi'
+ Plug 'rafi/awesome-vim-colorschemes'
  Plug 'preservim/tagbar'
  Plug 'ryanoasis/vim-devicons'
  Plug 'ap/vim-css-color'
- Plug 'rafi/awesome-vim-colorschemes'
  Plug 'http://github.com/tpope/vim-surround'
  Plug 'https://github.com/tpope/vim-commentary'
  Plug 'neoclide/coc.nvim'
@@ -40,12 +40,15 @@ call plug#end()
 :set undodir=~/.config/nvim/.vim-undo
 :colorscheme onedark
 :set background=dark
+:set cursorline
 
 "Key-Binding
 nnoremap <F2> :NERDTreeFind<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nmap <F3> :TagbarToggle<CR>
 nnoremap <space> i<space><esc>
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
 nmap <F8> :bp<CR>
 nmap <F9> :bn<CR>
 nmap <C-w> :bd<CR>
