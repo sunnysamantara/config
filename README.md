@@ -80,6 +80,7 @@ systemctl start grub-btrfs.path 	-- to get the timeshift mount variable use CTRL
 ````
 :PlugInstall 		-- Install all the vim pulgin 
 :CocInstall coc-spell-checker coc-pyright 		-- Install all the coc plugin 
+sudo -E -s      -- Save user env and switch to root
 ````
 
 ![Desktop](https://i.redd.it/riu2urpqy2f91.png)
