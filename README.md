@@ -73,6 +73,10 @@ How To: GRUB-BTRFS Snapshot Booting on Arch Linux Systems")
 
 - [**grub-btrfs**](https://github.com/Antynea/grub-btrfs "grub-btrfs")
 
+- [**KVM, QEMU and Virt Manager**](https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar)
+
+- [**Linux Hypervisor Setup**](https://www.youtube.com/watch?v=HfNKpT2jo7U&t=79s)
+
 ````
 systemctl start grub-btrfs.path 	-- to get the timeshift mount variable use CTRL + C
 ````
