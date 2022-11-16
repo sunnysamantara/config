@@ -75,7 +75,7 @@ How To: GRUB-BTRFS Snapshot Booting on Arch Linux Systems")
 
 - [**KVM, QEMU and Virt Manager**](https://computingforgeeks.com/install-kvm-qemu-virt-manager-arch-manjar)
 
-- [** How to install & use QEMU+KVM and virt-manager **](https://www.youtube.com/watch?v=2SdSiJTGKLM)
+- [**How to install & use QEMU+KVM and virt-manager**](https://www.youtube.com/watch?v=2SdSiJTGKLM)
 
 - [**Linux Hypervisor Setup**](https://www.youtube.com/watch?v=HfNKpT2jo7U&t=79s)
 
