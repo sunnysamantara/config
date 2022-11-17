@@ -89,4 +89,11 @@ systemctl start grub-btrfs.path 	-- to get the timeshift mount variable use CTRL
 sudo -E -s      -- Save user env and switch to root
 ````
 
+````
+sudo virsh net-list --all     --KVM
+sudo virsh net-start default
+
+sudo systemctl status libvirtd.service
+````
+
 ![Desktop](https://i.redd.it/riu2urpqy2f91.png)
