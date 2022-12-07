@@ -54,6 +54,7 @@
 - GSConnect 
 - Just Perfection 
 - Lock Keys
+- Quick settings tweaks
 - OpenWeather 
 - Sound Input & Output Device Chooser 
 - User Themes 
