@@ -32,14 +32,17 @@ bindkey ";2C" forward-word
 bindkey ";2D" backward-word
 
 #Add Plugins
-source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
-source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
-source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
-source ~/.config/zsh/zsh-you-should-use/you-should-use.plugin.zsh 2>/dev/null
-source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null
-source ~/.local/share/icons-in-terminal/icons_bash.sh  
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null 
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh 2>/dev/null
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh 2>/dev/null
+source /usr/share/fzf/completion.zsh 2>/dev/null
+source /usr/share/doc/pkgfile/command-not-found.zsh 2>/dev/null 
+source /usr/share/icons-in-terminal/icons_bash.sh
+
 
 #alias
 alias refresh="source ~/.zshrc"
 alias ls="logo-ls"
 
+# Created by newuser for 5.9
