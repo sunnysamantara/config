@@ -77,11 +77,11 @@ $character"""
 
 [directory]
 format = '\[[$path]($style)[$read_only]($read_only_style)\]'
-read_only ="[🔒]"
+read_only ="[]"
 
 [character]
-success_symbol = "[🟰](bold green)"
-error_symbol = "[⛔](bold red)"
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
 
 [aws]
 format = '\[[$symbol($profile)(\($region\))(\[$duration\])]($style)\]'
@@ -118,7 +118,7 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$context]($style)\]'
 
 [dotnet]
-format = '\[[$symbol($version)(🎯 $tfm)]($style)\]'
+format = '\[[$symbol($version)( $tfm)]($style)\]'
 
 [elixir]
 format = '\[[$symbol($version \(OTP $otp_version\))]($style)\]'
@@ -220,7 +220,7 @@ format = '\[[$symbol($version)]($style)\]'
 format = '\[[$symbol$environment]($style)\]'
 
 [sudo]
-symbol = "🔓"
+symbol = ""
 disabled = false
 format = '\[[$symbol]($style)\]'
 
@@ -259,8 +259,8 @@ disabled = false
 
 
 [status]
-symbol = "🔴"
-success_symbol = "🟢"
+symbol = ""
+success_symbol = ""
 format = '\[[$symbol$common_meaning$signal_name$maybe_int]($style)\]'
 map_symbol = true
 disabled = false
