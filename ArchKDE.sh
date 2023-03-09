@@ -18,9 +18,9 @@ cd ..
 
 
 #application
-sudo pacman -S --noconfirm yakuake kde-gtk-config ark dolphin dolphin-plugins gwenview kdeconnect neofetch  neovim packagekit-qt5 partitionmanager spectacle kate vlc firefox qbittorrent gimp bpytop bitwarden ufw reflector avahi kcalc xdg-utils xdg-user-dirs bash-completion bash-language-server  	openssh kamoso kdenlive kdegraphics-thumbnailers kimageformats libheif qt5-imageformats kdesdk-thumbnailers ffmpegthumbs taglib variety okular kvantum android-tools appmenu-gtk-module libreoffice-fresh
+sudo pacman -S --noconfirm yakuake kde-gtk-config ark dolphin dolphin-plugins gwenview kdeconnect neofetch  neovim packagekit-qt5 partitionmanager spectacle kate vlc firefox ktorrent gimp bpytop bitwarden ufw reflector avahi kcalc xdg-utils xdg-user-dirs bash-completion bash-language-server  	openssh kamoso kdenlive kdegraphics-thumbnailers kimageformats libheif qt5-imageformats kdesdk-thumbnailers ffmpegthumbs taglib variety okular kvantum android-tools appmenu-gtk-module libreoffice-fresh elisa
 
-paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kcm-grub2-git kio-admin
+paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kcm-grub2-git kio-admin qtscrcpy
 
 echo "exec startkde" >> ~/.xinitrc
 sudo ufw allow 1714:1764/udp
