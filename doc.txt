@@ -1,0 +1,88 @@
+Set font
+setfont ter-132n
+
+Wifi
+iwctl
+device list
+station <device/wlan0> scan
+station <device/wlan0> get-network
+station <device/wlan0> connect <network name>
+
+Timezone
+timedatectl status
+timedatectl list-timezones
+timedatectl set-timezone Asia/Kolkata
+
+Keyboard layout 
+loadkeys /usr/share/kbd/keymaps/i386/qwerty/us.map.gz
+
+Disk info
+lsblk
+hdparm -i <device name>
+fdisk -l
+
+Formatting
+cfdisk  --create disk partitions
+mkswap <partitions path>
+swapon <partitions path>
+mkfs.btrfs <partitions path>
+mkfs.fat -F32 <partitions path>
+
+BTRFS subvolume for snapper
+mount <partitions path> /mnt
+btrfs su cr /mnt/@
+btrfs su cr /mnt/@home
+btrfs su cr /mnt/@var
+btrfs su cr /mnt/@snapshots
+umount /mnt
+mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@ <partitions path> /mnt
+mkdir /mnt/{.snapshots,home,var}
+mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@home <partitions path> /mnt/home
+mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@var <partitions path> /mnt/var
+mount -o noatime,compress=zstd,space_cache=v2,discard=async,subvol=@snapshots <partitions path> /mnt/snapshots
+
+
+Rank mirror and parallel download
+cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+vim /etc/pacman.conf  --enable option
+pacman -S pacman-contrib
+rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak > /etc/pacman.d/mirrorlist
+
+Base System
+pacman -Sy archlinux-keyring
+pacstrap -i /mnt base base-devel linux linux-headers linux-firmware sudo vim git dhcpcd networkmanager
+genfstab -U /mnt >> /mnt/etc/fstab
+vim /etc/mkinitcpio.conf --add btrfs in the modules
+mkinitcpio -p linux
+
+User and host
+arch-chroot /mnt 
+passwd <blank/username>
+useradd -m sunny
+usermod -aG wheel,storage,power <username>
+visudo -- Edit sudo
+Uncomment to allow member of group wheel
+echo <hostname> > /etc/hostname
+vim /etc/hosts -- add host ip
+
+System local
+vim /etc/locale.gen -- uncomment en_US.UTF-8
+locale-gen
+echo LANG=en_US.UTF-8 > /etc/locale.conf
+export LANG=en_US.UTF-8
+ln -sf /usr/share/zoneinfo/Asia/Kolkata /etc/localtime
+hwclock --systohc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
