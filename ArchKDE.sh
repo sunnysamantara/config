@@ -19,7 +19,7 @@ cd paru
 makepkg -si --noconfirm
 cd ..
 
-paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager mkinitcpio-firmware
+paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager
 
 echo "exec startkde" >> ~/.xinitrc
 sudo ufw allow 1714:1764/udp
