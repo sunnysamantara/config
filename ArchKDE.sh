@@ -21,6 +21,7 @@ cd ..
 
 paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager
 
+kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.krunner,/App,,toggleDisplay"
 echo "exec startkde" >> ~/.xinitrc
 sudo ufw allow 1714:1764/udp
 sudo ufw allow 1714:1764/tcp
