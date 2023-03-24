@@ -11,7 +11,7 @@ sudo pacman -S --noconfirm  xorg xorg-xinit xf86-video-intel nvidia-settings nvi
 sudo pacman -S --noconfirm pipewire pipewire-alsa pipewire-audio pipewire-pulse pipewire-jack qpwgraph
 
 #application
-sudo pacman -S --noconfirm yakuake kde-gtk-config ark dolphin dolphin-plugins gwenview kdeconnect neofetch  neovim packagekit-qt5 partitionmanager spectacle kate vlc firefox ktorrent gimp bpytop bitwarden ufw reflector avahi kcalc xdg-utils xdg-user-dirs bash-completion bash-language-server openssh kamoso kdenlive kdegraphics-thumbnailers kimageformats libheif qt5-imageformats kdesdk-thumbnailers ffmpegthumbs taglib variety okular kvantum android-tools appmenu-gtk-module libreoffice-fresh elisa libzip p7zip unrar arj zip unarchiver
+sudo pacman -S --noconfirm yakuake kde-gtk-config ark dolphin dolphin-plugins gwenview kdeconnect neofetch  neovim packagekit-qt5 partitionmanager spectacle kate vlc firefox ktorrent gimp bpytop bitwarden ufw reflector avahi kcalc xdg-utils xdg-user-dirs bash-completion bash-language-server openssh kamoso kdenlive kdegraphics-thumbnailers kimageformats libheif qt5-imageformats kdesdk-thumbnailers ffmpegthumbs taglib variety okular kvantum android-tools appmenu-gtk-module libreoffice-fresh elisa libzip p7zip unrar arj unarchiver
 
 #paru aur helper
 git clone https://aur.archlinux.org/paru.git
