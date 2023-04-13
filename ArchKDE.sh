@@ -20,7 +20,10 @@ makepkg -si --noconfirm
 cd ..
 rm -r paru
 
-paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager aic94xx-firmware ast-firmware wd719x-firmware upd72020x-fw
+paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager aic94xx-firmware ast-firmware wd719x-firmware upd72020x-fw logo-ls
+
+mkdir -p ~/.config/zsh/zsh-history
+touch ~/.config/zsh/zsh-history/history
 
 kwriteconfig5 --file kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.krunner,/App,,toggleDisplay"
 echo "exec startkde" >> ~/.xinitrc
