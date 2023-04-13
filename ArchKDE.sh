@@ -23,7 +23,7 @@ rm -r paru
 paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn google-chrome systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager aic94xx-firmware ast-firmware wd719x-firmware upd72020x-fw logo-ls zsh-you-should-use
 
 #ZSH 
-sudo pacman -S --noconfirm zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search
+sudo pacman -S --noconfirm zsh zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search zsh-completions
 mkdir -p ~/.config/zsh/zsh-history
 touch ~/.config/zsh/zsh-history/history
 
