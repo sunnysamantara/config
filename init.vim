@@ -1,4 +1,4 @@
-" Plugins
+"Plugins
 "Use PlugInstal to instal and PlugClean to uninstall
 
 call plug#begin('~/.config/nvim/autoload/plugged')
