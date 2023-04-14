@@ -40,7 +40,7 @@ call plug#end()
 :set undodir=~/.config/nvim/.vim-undo
 :colorscheme onedark
 :set background=dark
-:set cursorline
+":set cursorline
 
 "Key-Binding
 nnoremap <F2> :NERDTreeFind<CR>
