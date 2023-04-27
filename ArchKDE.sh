@@ -20,10 +20,10 @@ makepkg -si --noconfirm
 cd ..
 rm -r paru
 
-paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn ungoogled-chromium systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager aic94xx-firmware ast-firmware wd719x-firmware upd72020x-fw logo-ls zsh-you-should-use
+paru -S --noconfirm resvg raw-thumbnailer kde-thumbnailer-apk xdman protonvpn systemd-kcm kio-admin qtscrcpy auto-cpufreq optimus-manager aic94xx-firmware ast-firmware wd719x-firmware upd72020x-fw zsh-you-should-use
 
 #ZSH and config
-sudo pacman -S --noconfirm zsh zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search zsh-completions
+sudo pacman -S --noconfirm lsd zsh zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search zsh-completions
 mkdir -p ~/.config/zsh/zsh-history
 touch ~/.config/zsh/zsh-history/history
 
