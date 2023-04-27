@@ -43,6 +43,6 @@ source /usr/share/icons-in-terminal/icons_bash.sh
 
 #alias
 alias refresh="source ~/.zshrc"
-alias ls="logo-ls"
+alias ls="lsd -hA --group-dirs first"
 alias vi="nvim"
 alias vim="nvim"
