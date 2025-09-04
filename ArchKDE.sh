@@ -5,13 +5,13 @@ sudo timedatectl set-timezone Asia/Kolkata
 sudo pacman -Syy
 
 #basic drivers and sessions
-sudo pacman -S --noconfirm  xorg xorg-xinit xf86-video-intel nvidia-settings nvidia-prime nvidia nvidia-utils sddm sddm-kcm plasma plasma-desktop plasma-wayland-session plasma-wayland-protocols bluez encfs powerdevil wpa_supplicant konsole intel-ucode git linux-firmware-qlogic linux-firmware-bnx2x linux-firmware-liquidio linux-firmware-mellanox linux-firmware-nfp
+sudo pacman -S --noconfirm  xorg xorg-xinit xf86-video-intel nvidia-settings nvidia-prime nvidia nvidia-utils sddm sddm-kcm plasma plasma-desktop plasma-wayland-protocols bluez encfs powerdevil wpa_supplicant konsole intel-ucode git linux-firmware-qlogic linux-firmware-bnx2x linux-firmware-liquidio linux-firmware-mellanox linux-firmware-nfp
 
 #audio
-sudo pacman -S --noconfirm pipewire pipewire-alsa pipewire-audio pipewire-pulse pipewire-jack qpwgraph
+sudo pacman -S --noconfirm pipewire pipewire-alsa pipewire-audio pipewire-pulse jack2  qpwgraph
 
 #application
-sudo pacman -S --noconfirm git curl yakuake kde-gtk-config ark dolphin dolphin-plugins gwenview kdeconnect neofetch neovim packagekit-qt5 partitionmanager spectacle kate haruna firefox ktorrent gimp bpytop bitwarden ufw reflector avahi kcalc xdg-utils xdg-user-dirs bash-completion bash-language-server openssh kamoso kdenlive kdegraphics-thumbnailers kimageformats libheif qt5-imageformats kdesdk-thumbnailers ffmpegthumbs taglib variety okular kvantum android-tools appmenu-gtk-module libreoffice-fresh elisa libzip p7zip unrar arj unarchiver ctags obs-studio
+sudo pacman -S --noconfirm git curl yakuake kde-gtk-config ark dolphin dolphin-plugins gwenview kdeconnect neofetch neovim partitionmanager spectacle kate haruna firefox ktorrent gimp bpytop bitwarden ufw reflector avahi kcalc xdg-utils xdg-user-dirs bash-completion bash-language-server openssh kamoso kdenlive kdegraphics-thumbnailers kimageformats libheif qt5-imageformats kdesdk-thumbnailers ffmpegthumbs taglib variety okular kvantum android-tools appmenu-gtk-module libreoffice-fresh elisa libzip p7zip unrar arj unarchiver ctags obs-studio
 
 #paru aur helper
 git clone https://aur.archlinux.org/paru.git
