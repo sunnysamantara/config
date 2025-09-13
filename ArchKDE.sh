@@ -165,3 +165,6 @@ sudo systemctl enable auto-cpufreq
 sudo systemctl enable optimus-manager.service
 sudo systemctl enable avahi-daemon
 sudo systemctl enable bluetooth
+
+#DRM kernel mode setting
+sudo cat /sys/module/nvidia_drm/parameters/modeset
