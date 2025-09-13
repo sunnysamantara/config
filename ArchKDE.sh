@@ -5,9 +5,6 @@ sudo timedatectl set-timezone Asia/Kolkata
 sudo pacman -Syy
 
 #basic drivers
-sudo pacman -S --noconfirm  --needed xorg
-sudo pacman -S --noconfirm  --needed xorg-xinit
-sudo pacman -S --noconfirm  --needed xf86-video-intel
 sudo pacman -S --noconfirm  --needed nvidia-settings
 sudo pacman -S --noconfirm  --needed nvidia-prime
 sudo pacman -S --noconfirm  --needed nvidia
