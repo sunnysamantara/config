@@ -66,7 +66,7 @@ sudo pacman -S --noconfirm  --needed spectacle
 sudo pacman -S --noconfirm  --needed kate
 sudo pacman -S --noconfirm  --needed haruna
 sudo pacman -S --noconfirm  --needed firefox
-sudo pacman -S --noconfirm  --needed ufw
+sudo pacman -S --noconfirm  --needed firewalld
 sudo pacman -S --noconfirm  --needed reflector
 sudo pacman -S --noconfirm  --needed avahi
 sudo pacman -S --noconfirm  --needed kcalc
@@ -155,8 +155,8 @@ cd ..
 rm -r config
 
 #configure firewall
-sudo ufw allow 1714:1764/udp
-sudo ufw allow 1714:1764/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
+sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
 
 #start systemd services
 sudo systemctl enable sddm
