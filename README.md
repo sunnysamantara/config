@@ -46,8 +46,8 @@ icon - reversal- cblack -dark
 cursors - Qogir-dark
 splash screen - kuro
 boot splash screen - fallout
-sddm - 
-grub
+sddm - Holo ISO steam OS
+grub - https://github.com/VandalByte/dedsec-grub2-theme?tab=readme-ov-file
 
 ### Links
 - [**Basic app installtion**](https://www.youtube.com/watch?v=8ORIVRKZnwQ "15 Things You MUST DO After Installing EndeavourOS")
