@@ -1,7 +1,6 @@
-# Endeavour OS GNOME
+# Endeavour OS KDE
 
 ### Program
-
 - Starship
 - ZSH
 - Bpytop
@@ -21,7 +20,7 @@
 - GIMP
 - Raw Therapee
 - Textpieces
--  nodejs 
+- nodejs 
 - ctags 
 - wl-clipboard
 - vim plug
@@ -41,24 +40,14 @@
 - Nerd fonts fira-code
 - qgnomeplatform
 
-### Extensions
-- Bing Wallpaper
-- Blur my Shell
-- Burn My Windows
-- Caffeine 
-- Clipboard Indicator 
-- Compiz windows effect
-- Dash to dock (disable)
-- Desktop Icons NG (DING) 
-- Gnome 4x UI Improvements
-- GSConnect 
-- Just Perfection 
-- Lock Keys
-- Quick settings tweaks
-- OpenWeather 
-- Sound Input & Output Device Chooser 
-- User Themes 
-- Vitals
+Color -carl
+Application Style - carl
+icon - reversal- cblack -dark
+cursors - Qogir-dark
+splash screen - kuro
+boot splash screen - fallout
+sddm - 
+grub
 
 ### Links
 - [**Basic app installtion**](https://www.youtube.com/watch?v=8ORIVRKZnwQ "15 Things You MUST DO After Installing EndeavourOS")
