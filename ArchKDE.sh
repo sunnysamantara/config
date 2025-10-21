@@ -106,27 +106,27 @@ sudo pacman -S --noconfirm  --needed obs-studio
 sudo pacman -S --noconfirm  --needed veracrypt
 
 #paru AUR helper
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si --noconfirm
+git clone https://aur.archlinux.org/pikaur.git
+cd pikaur
+makepkg -fsri --noconfirm
 cd ..
-rm -r paru
+sudo rm -r pikaur
 
 #AUR application
-sudo paru -S --noconfirm  --needed resvg
-sudo paru -S --noconfirm  --needed raw-thumbnailer
-sudo paru -S --noconfirm  --needed kde-thumbnailer-apk
-sudo paru -S --noconfirm  --needed xdman kio-admin
-sudo paru -S --noconfirm  --needed qtscrcpy
-sudo paru -S --noconfirm  --needed auto-cpufreq
-sudo paru -S --noconfirm  --needed optimus-manager
-sudo paru -S --noconfirm  --needed aic94xx-firmware
-sudo paru -S --noconfirm  --needed ast-firmware
-sudo paru -S --noconfirm  --needed wd719x-firmware
-sudo paru -S --noconfirm  --needed upd72020x-fw
-sudo paru -S --noconfirm  --needed phonon-mpv
-sudo paru -S --noconfirm  --needed neofetch
-sudo paru -S --noconfirm  --needed optimus-manager-qt
+sudo pikaur -S --noconfirm  --needed resvg
+sudo pikaur -S --noconfirm  --needed raw-thumbnailer
+sudo pikaur -S --noconfirm  --needed kde-thumbnailer-apk
+sudo pikaur -S --noconfirm  --needed xdman kio-admin
+sudo pikaur -S --noconfirm  --needed qtscrcpy
+sudo pikaur -S --noconfirm  --needed auto-cpufreq
+sudo pikaur -S --noconfirm  --needed optimus-manager
+sudo pikaur -S --noconfirm  --needed aic94xx-firmware
+sudo pikaur -S --noconfirm  --needed ast-firmware
+sudo pikaur -S --noconfirm  --needed wd719x-firmware
+sudo pikaur -S --noconfirm  --needed upd72020x-fw
+sudo pikaur -S --noconfirm  --needed phonon-mpv
+sudo pikaur -S --noconfirm  --needed neofetch
+sudo pikaur -S --noconfirm  --needed optimus-manager-qt
 
 #ZSH and config
 sudo pacman -S --noconfirm  --needed zsh
@@ -136,8 +136,8 @@ sudo pacman -S --noconfirm  --needed zsh-autosuggestions
 sudo pacman -S --noconfirm  --needed zsh-history-substring-search
 sudo pacman -S --noconfirm  --needed zsh-completions
 sudo pacman -S --noconfirm  --needed starship
-sudo paru -S --noconfirm  --needed icons-in-terminal-git
-sudo paru -S --noconfirm  --needed zsh-you-should-use
+sudo pikaur -S --noconfirm  --needed icons-in-terminal-git
+sudo pikaur -S --noconfirm  --needed zsh-you-should-use
 
 mkdir -p ~/.config/zsh/zsh-history
 touch ~/.config/zsh/zsh-history/history
