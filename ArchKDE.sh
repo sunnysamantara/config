@@ -104,6 +104,7 @@ sudo pacman -S --noconfirm  --needed neovim
 sudo pacman -S --noconfirm  --needed libreoffice-fresh
 sudo pacman -S --noconfirm  --needed obs-studio
 sudo pacman -S --noconfirm  --needed veracrypt
+sudo pacman -S --noconfirm  --needed lact
 
 #paru AUR helper
 git clone https://aur.archlinux.org/pikaur.git
@@ -115,18 +116,17 @@ sudo rm -r pikaur
 #AUR application
 sudo pikaur -S --noconfirm  --needed resvg
 sudo pikaur -S --noconfirm  --needed raw-thumbnailer
+sudo pikaur -S --noconfirm  --needed envycontrol
 sudo pikaur -S --noconfirm  --needed kde-thumbnailer-apk
 sudo pikaur -S --noconfirm  --needed xdman kio-admin
 sudo pikaur -S --noconfirm  --needed qtscrcpy
 sudo pikaur -S --noconfirm  --needed auto-cpufreq
-sudo pikaur -S --noconfirm  --needed optimus-manager
 sudo pikaur -S --noconfirm  --needed aic94xx-firmware
 sudo pikaur -S --noconfirm  --needed ast-firmware
 sudo pikaur -S --noconfirm  --needed wd719x-firmware
 sudo pikaur -S --noconfirm  --needed upd72020x-fw
 sudo pikaur -S --noconfirm  --needed phonon-mpv
 sudo pikaur -S --noconfirm  --needed neofetch
-sudo pikaur -S --noconfirm  --needed optimus-manager-qt
 
 #ZSH and config
 sudo pacman -S --noconfirm  --needed zsh
@@ -152,7 +152,7 @@ cp starship.toml ~/.config/starship.toml
 mkdir -p ~/.config/nvim
 cp init.vim ~/.config/nvim/init.vim
 cd ..
-rm -r config
+sudo rm -r config
 
 #configure firewall
 sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/tcp
@@ -162,7 +162,7 @@ sudo firewall-cmd --zone=public --permanent --add-port=1714-1764/udp
 sudo systemctl enable sddm
 sudo systemctl enable reflector.timer
 sudo systemctl enable auto-cpufreq
-sudo systemctl enable optimus-manager.service
+sudo systemctl enable power-profiles-daemon.service
 sudo systemctl enable avahi-daemon
 sudo systemctl enable bluetooth
 
