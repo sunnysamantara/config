@@ -142,7 +142,7 @@ sudo pikaur -S --noconfirm  --needed zsh-you-should-use
 mkdir -p ~/.config/zsh/zsh-history
 touch ~/.config/zsh/zsh-history/history
 
-#configure neofetch, starship, zsh
+#configure neofetch, starship, zsh, vim
 git clone https://github.com/sunnysamantara/config.git
 cd config
 cp .zshrc ~/.zshrc
