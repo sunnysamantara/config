@@ -40,14 +40,15 @@
 - Nerd fonts fira-code
 - qgnomeplatform
 
-Color -carl
-Application Style - carl
-icon - reversal- cblack -dark
-cursors - Qogir-dark
-splash screen - kuro
-boot splash screen - fallout
-sddm - Holo ISO steam OS
-grub - https://github.com/VandalByte/dedsec-grub2-theme?tab=readme-ov-file
+- Color -carl
+- Application Style - carl
+- icon - reversal- cblack -dark
+- cursors - Qogir-dark
+- splash screen - kuro
+- boot splash screen - fallout
+- sddm - Holo ISO steam OS
+- grub - https://github.com/VandalByte/dedsec-grub2-theme?tab=readme-ov-file
+- envy control widget - optimus gpu switcher
 
 ### Links
 - [**Basic app installtion**](https://www.youtube.com/watch?v=8ORIVRKZnwQ "15 Things You MUST DO After Installing EndeavourOS")
