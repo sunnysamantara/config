@@ -32,7 +32,7 @@
     # Enable this if you have graphical corruption issues or application crashes after waking
     # up from sleep. This fixes it by saving the entire VRAM memory to /tmp/ instead
     # of just the bare essentials.
-    powerManagement.enable = false;
+    powerManagement.enable = true;
 
     # Fine-grained power management. Turns off GPU when not in use.
     # Experimental and only works on modern Nvidia GPUs (Turing or newer).
@@ -83,11 +83,25 @@
   };
 };
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot"; # ← use the same mount point here.
+    };
+    grub = {
+      enable = true;
+      efiSupport = true;
+      useOSProber = true;
+      #efiInstallAsRemovable = true; # in case canTouchEfiVariables doesn't work for your system
+      device = "nodev";
+    };
+    # Disable systemd-boot
+    systemd-boot.enable = false;
+  };
+
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_hardened;
+  boot.kernelPackages = pkgs.linuxPackages_xanmod;
   boot.kernelParams = ["nvidia.Nvreg_PreserveVideoMemoryAllocations=1" "nvidia-drm.modeset=1"];
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -126,6 +140,7 @@
   services.displayManager.sddm.enable = true;
   services.desktopManager.plasma6.enable = true;
   services.displayManager.sddm.wayland.enable = true;
+  services.displayManager.sddm.settings.General.DisplayServer = "wayland";
 
 
   # Configure keymap in X11
@@ -162,8 +177,11 @@
     description = "sunny";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-      kdePackages.kate
-    #  thunderbird
+      bitwarden-desktop
+      libreoffice-qt-fresh
+      kdePackages.kdenlive
+      obs-studio
+      veracrypt
     ];
   };
 
@@ -176,10 +194,37 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    wget
     lshw
-
+    libheif
+    kdePackages.kate
+    kdePackages.kcalc
+    kdePackages.partitionmanager
+    kdePackages.sddm-kcm
+    kdePackages.wayland-protocols
+    kdePackages.kde-gtk-config
+    kdePackages.dolphin-plugins
+    kdePackages.kdesdk-thumbnailers
+    kdePackages.kdegraphics-thumbnailers
+    kdePackages.kdenetwork-filesharing
+    kdePackages.kdeconnect-kde
+    kdePackages.kamoso
+    kdePackages.kimageformats
+    kdePackages.qtimageformats
+    kdePackages.ffmpegthumbs
+    kdePackages.kate
+    qtscrcpy
+    gimp2-with-plugins
+    kdePackages.ktorrent
+    nufraw-thumbnailer
+    haruna
+    resvg
+    qpwgraph
+    wayland-utils
+    wl-clipboard
+    neovim
+    git
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
