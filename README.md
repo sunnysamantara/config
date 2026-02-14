@@ -91,3 +91,6 @@ sudo systemctl status libvirtd.service
 
 Changes from systemd to grub 
 f that is not possible or the issue persists, you can manually delete the old systemd-boot files from your EFI System Partition (ESP). The key file to remove is usually $ESP/EFI/BOOT/BOOTX64.EFI, or the directories /boot/EFI/systemd
+
+sudo nixos-rebuild switch --install-bootloader
+
